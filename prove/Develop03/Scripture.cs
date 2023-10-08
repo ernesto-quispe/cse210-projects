@@ -15,15 +15,15 @@ class Scripture {
           _words.Add(tempWord);
          }
     }
-    public int getLengthWords()
+    public int GetLengthWords()
     {
       return _words.Count();
     }
-    public bool getWordIsHidden(int indexRandom)
+    public bool GetWordIsHidden(int indexRandom)
     {
       return _words[indexRandom].IsHidden();
     }
-    public bool getWordsAllHidden()
+    public bool GetWordsAllHidden()
     {
       bool isAllHidden = true;
 

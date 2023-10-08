@@ -39,13 +39,13 @@ class Program
 
     while (entry.ToLower() != "quit")
     {
-      int indexRandom = random.Next(scripture.getLengthWords());
+      int indexRandom = random.Next(scripture.GetLengthWords());
 
-      if (scripture.getWordsAllHidden() == false)
+      if (scripture.GetWordsAllHidden() == false)
       {
-        while (scripture.getWordIsHidden(indexRandom) != false)
+        while (scripture.GetWordIsHidden(indexRandom) != false)
         {
-          indexRandom = random.Next(scripture.getLengthWords());
+          indexRandom = random.Next(scripture.GetLengthWords());
         }
         scripture.HideRandomWords(indexRandom);
         Console.Clear();
